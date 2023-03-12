@@ -1,0 +1,62 @@
+.add-product-container {
+  margin: auto;
+  margin-top: 10em;
+  max-width: 50%;
+  border-radius: 9px;
+  background-color: #fff;
+  padding: 4em;
+  border: 2px solid #01d6af;
+}
+
+.add-product-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.add-product-form p {
+  margin-bottom: 0.7em;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.add-product-form label input {
+  width: 100%;
+  border: none;
+  background-color: #ccc;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  padding: 0.7em;
+  outline-color: #01d6af;
+}
+
+.add-product-form label select {
+  width: 100%;
+  border: none;
+  background-color: #ccc;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  padding: 0.7em;
+  outline-color: #01d6af;
+}
+
+.add-product-form div input {
+  width: 100%;
+  border: none;
+  background-color: #1be292;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7em;
+  cursor: pointer;
+  outline-color: #01d6af;
+}
+
+.add-product-form div {
+  align-self: end;
+}
+
+.error {
+  color: rgb(239, 38, 55);
+}

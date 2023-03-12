@@ -1,0 +1,21 @@
+.pagination {
+  margin-top: 2em;
+}
+
+.pagination button {
+  font-size: 1.6rem;
+  border: none;
+  background-color: transparent;
+  color: #01d6af;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.pagination button:hover,
+.pagination button:focus,
+.pagination button.active {
+  text-decoration: none;
+  background-color: #01d6af;
+  color: #fff;
+}

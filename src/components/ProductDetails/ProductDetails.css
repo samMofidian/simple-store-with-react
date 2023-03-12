@@ -1,0 +1,45 @@
+.product-container {
+  max-width: 100em;
+  margin: auto;
+  display: grid;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.product-title {
+  justify-self: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.product-img {
+  width: 35%;
+  margin-top: 3em;
+  justify-self: center;
+}
+
+.product-price {
+  margin-top: 1em;
+  justify-self: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.product-rate {
+  margin-top: 2em;
+  justify-self: center;
+  font-size: 1.8rem;
+}
+
+.product-desc {
+  margin-top: 1em;
+  display: grid;
+  justify-self: center;
+  font-size: 2rem;
+}
+
+.product-desc h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  justify-self: end;
+}
