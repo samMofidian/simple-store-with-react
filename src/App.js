@@ -4,6 +4,7 @@ import NotFound from "./components/NotFound";
 import ProductsList from "./components/ProductsList";
 import ProductDetails from "./components/ProductDetails";
 import AddProduct from "./components/AddProduct/AddProduct";
+import Home from "./components/Home";
 import "./App.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );
