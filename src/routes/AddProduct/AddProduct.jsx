@@ -7,18 +7,29 @@ import "./AddProduct.css";
 
 // yup schema
 const validationSchema = yup.object().shape({
-  title: yup.string().required("Title is required").min(2).max(54),
-  price: yup
-    .number()
-    .required("Price is required")
-    .positive("Price must be a positive number")
-    .max(1000000, "Price must be less than or equal to 1,000,000"),
-  description: yup.string().required("Description is required").min(3).max(256),
-  imageLink: yup
+  title: yup
     .string()
-    .url("Image link must be a valid URL")
-    .required("Image link is required"),
-  category: yup.string().required("Category is required").max(28),
+    .required("فیلد نباید خالی باشد")
+    .min(2, "تعداد حروف کم است")
+    .max(54, "تعداد حروف بیش از حد مجاز است"),
+  price: yup
+    .number("باید عدد باشد")
+    .required("فیلد نباید خالی باشد")
+    .positive("باید عددی مثبت باشد")
+    .max(1000000, "باید کوچکتر مساوی 1 میلیون باشد"),
+  description: yup
+    .string("باید رشته باشد")
+    .required("فیلد نباید خالی باشد")
+    .min(3, "تعداد حروف کم است")
+    .max(256, "تعداد حروف بیش از حد مجاز است"),
+  imageLink: yup
+    .string("باید رشته باشد")
+    .url("باید یک ادرس معتبر باشد")
+    .required("فیلد نباید خالی باشد"),
+  category: yup
+    .string("باید رشته باشد")
+    .required("فیلد نباید خالی باشد")
+    .max(28, "تعداد حروف بیش از حد مجاز است"),
 });
 
 const AddProduct = () => {

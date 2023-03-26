@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
-import NotFound from "./components/NotFound";
-import ProductsList from "./components/ProductsList";
-import ProductDetails from "./components/ProductDetails";
-import AddProduct from "./components/AddProduct/AddProduct";
-import Home from "./components/Home";
+import ProductsList from "./routes/ProductsList";
+import ProductDetails from "./routes/ProductDetails";
+import AddProduct from "./routes/AddProduct";
+import NotFound from "./routes/NotFound";
+import Home from "./routes/Home";
 import "./App.css";
 
 const App = () => {

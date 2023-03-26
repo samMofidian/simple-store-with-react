@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import ProductCard from "../ProductCard";
-import Pagination from "../Pagination";
+import ProductCard from "../../components/ProductCard";
+import Pagination from "../../components/Pagination";
 import "./ProductsList.css";
 
 const ProductsList = () => {

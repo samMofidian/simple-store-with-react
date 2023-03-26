@@ -8,8 +8,13 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "BNazanin";
+  src: local("BNazanin"), url("./fonts/BNazanin.ttf") format("truetype");
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "BNazanin";
   line-height: 1;
   font-weight: 400;
   color: #444;
