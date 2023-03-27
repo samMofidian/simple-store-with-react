@@ -8,7 +8,7 @@ import "./AddProduct.css";
 // yup schema
 const validationSchema = yup.object().shape({
   title: yup
-    .string()
+    .string("باید رشته باشد")
     .required("فیلد نباید خالی باشد")
     .min(2, "تعداد حروف کم است")
     .max(54, "تعداد حروف بیش از حد مجاز است"),
@@ -16,7 +16,8 @@ const validationSchema = yup.object().shape({
     .number("باید عدد باشد")
     .required("فیلد نباید خالی باشد")
     .positive("باید عددی مثبت باشد")
-    .max(1000000, "باید کوچکتر مساوی 1 میلیون باشد"),
+    .max(1000000, "باید کوچکتر مساوی 1 میلیون باشد")
+    .typeError("مقدار باید عدد باشد"),
   description: yup
     .string("باید رشته باشد")
     .required("فیلد نباید خالی باشد")

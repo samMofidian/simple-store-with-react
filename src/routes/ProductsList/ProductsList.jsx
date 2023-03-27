@@ -14,6 +14,16 @@ const ProductsList = () => {
 
   // fetch products
   useEffect(() => {
+    const interceptor = axios.interceptors.response.use(
+      (response) => response,
+      (error) => {
+        console.log(error);
+        setLoading(false);
+        toast.error("مشکلی پیش آمده صفحه را رفرش کنید");
+        return Promise.reject(error);
+      }
+    );
+
     axios
       .get("https://fakestoreapi.com/products")
       .then((response) => {
@@ -25,6 +35,11 @@ const ProductsList = () => {
         console.log(error);
         setLoading(false);
       });
+
+    // remove interceptor
+    return () => {
+      axios.interceptors.response.eject(interceptor);
+    };
   }, []);
 
   const delProduct = (id) => {

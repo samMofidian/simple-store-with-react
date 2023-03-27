@@ -10,11 +10,11 @@ html {
 
 @font-face {
   font-family: "BNazanin";
-  src: local("BNazanin"), url("./fonts/BNazanin.ttf") format("truetype");
+  src: url("../public/fonts/BNazanin.ttf") format("truetype");
 }
 
 body {
-  font-family: "BNazanin";
+  font-family: "BNazanin", sans-serif !important;
   line-height: 1;
   font-weight: 400;
   color: #444;

@@ -1,3 +1,5 @@
+import "./Home.css";
+
 const Home = () => {
   return <h1>صفحه اصلی</h1>;
 };
